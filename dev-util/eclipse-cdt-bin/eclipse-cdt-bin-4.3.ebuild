@@ -47,5 +47,5 @@ src_install() {
 	newins "${T}"/eclipserc-bin eclipserc-bin-${SLOT}
 
 	newbin "${T}"/eclipse-bin eclipse-cdt-bin-${SLOT}
-	make_desktop_entry "eclipse-cdt-bin-${SLOT}" "Eclipse ${PV} (bin)" "${dest}/icon.xpm"
+	make_desktop_entry "eclipse-cdt-bin-${SLOT}" "Eclipse ${RNAME}" "${dest}/icon.xpm"
 }
