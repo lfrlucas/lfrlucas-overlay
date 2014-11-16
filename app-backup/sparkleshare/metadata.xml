@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer>
+		<email>matsuu@gentoo.org</email>
+		<name>MATSUU Takuto</name>
+	</maintainer>
+	<use>
+		<flag name="nautilus">Enable SparkleShare client extension in <pkg>gnome-base/nautilus</pkg></flag>
+	</use>
+</pkgmetadata>

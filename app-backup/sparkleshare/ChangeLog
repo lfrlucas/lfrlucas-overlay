@@ -1,0 +1,30 @@
+# ChangeLog for app-backup/sparkleshare
+# Copyright 1999-2012 Gentoo Foundation; Distributed under the GPL v2
+# $Header: $
+
+*sparkleshare-0.6.0 (11 Jan 2012)
+
+  11 Jan 2012; MATSUU Takuto <matsuu@gentoo.org> -sparkleshare-0.2.4.ebuild,
+  -sparkleshare-0.2.5.ebuild, +sparkleshare-0.6.0.ebuild:
+  Version bumped. Removed old versions.
+
+  27 Oct 2011; Justin Lecher <jlec@gentoo.org> metadata.xml:
+  Removed no-herd from herd tag in metadata.xml
+
+*sparkleshare-0.2.5 (19 Aug 2011)
+
+  19 Aug 2011; MATSUU Takuto <matsuu@gentoo.org> +sparkleshare-0.2.5.ebuild:
+  Version bumped.
+
+*sparkleshare-0.2.4 (30 Jun 2011)
+
+  30 Jun 2011; MATSUU Takuto <matsuu@gentoo.org> -sparkleshare-0.2.3.ebuild,
+  +sparkleshare-0.2.4.ebuild:
+  Version bumped.
+
+*sparkleshare-0.2.3 (29 Jun 2011)
+
+  29 Jun 2011; MATSUU Takuto <matsuu@gentoo.org> +sparkleshare-0.2.3.ebuild,
+  +metadata.xml:
+  Initial import.
+
