@@ -9,5 +9,5 @@ LICENSE=GPL-3
 RDEPEND=>=dev-lang/mono-2.2 gtk? ( >=dev-dotnet/gtk-sharp-2.12.2 >=dev-dotnet/glib-sharp-2.12.2 libnotify? ( dev-dotnet/notify-sharp ) ) dev-dotnet/webkit-sharp dev-dotnet/notify-sharp nautilus? ( dev-python/nautilus-python ) >=dev-vcs/git-1.7.1 virtual/libintl
 SLOT=0
 SRC_URI=https://github.com/downloads/hbons/SparkleShare/sparkleshare-0.8.0.tar.gz
-_eclasses_=gnome2-utils	5cdfd22a2163c9d3a891648bd19453a7	multilib	3bf24e6abb9b76d9f6c20600f0b716bf	toolchain-funcs	b99aa37f734b5d426efd83b2f271cece
+_eclasses_=gnome2-utils	5cdfd22a2163c9d3a891648bd19453a7	multilib	62927b3db3a589b0806255f3a002d5d3	toolchain-funcs	42408102d713fbad60ca21349865edb4
 _md5_=7b4c9a585ebe413085bb93305b6dad7c
