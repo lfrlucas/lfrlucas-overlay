@@ -1,4 +1,4 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright 1999-2014 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
@@ -7,10 +7,9 @@ EAPI=5
 inherit eutils versionator
 
 SR=R
-#$(get_version_component_range 3)
 RNAME="mars"
 
-SRC_BASE="http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/${RNAME}/${SR}/eclipse-cpp-${RNAME}-${SR}-linux-gtk"
+SRC_BASE="http://www.eclipse.org/downloads/download.php?file=/technologycpp/downloads/release/${RNAME}/${SR}/eclipse-cpp-${RNAME}-${SR}-linux-gtk"
 
 DESCRIPTION="Eclipse SDK"
 HOMEPAGE="http://www.eclipse.org"
@@ -19,8 +18,8 @@ SRC_URI="
 	x86? ( ${SRC_BASE}.tar.gz&r=1 -> eclipse-cpp-${RNAME}-${SR}-linux-gtk-${PV}.tar.gz )"
 
 LICENSE="EPL-1.0"
-SLOT="$(get_version_component_range 1-2)"
-KEYWORDS="~amd64"
+SLOT="4.5"
+KEYWORDS="x86 amd64"
 IUSE=""
 
 RDEPEND="
@@ -38,15 +37,15 @@ src_install() {
 	exeinto ${dest}
 	doexe eclipse
 
-	dohtml -r about.html about_files epl-v10.html notice.html readme/*
+	dohtml -r readme/*
 
-	cp "${FILESDIR}"/eclipserc-bin "${T}" || die
-	cp "${FILESDIR}"/eclipse-bin "${T}" || die
-	sed -e "s@%SLOT%@${SLOT}@" -i "${T}"/eclipse{,rc}-bin || die
+	cp "${FILESDIR}"/eclipserc-bin-${SLOT} "${T}" || die
+	cp "${FILESDIR}"/eclipse-bin-${SLOT} "${T}" || die
+	sed "s@%SLOT%@${SLOT}@" -i "${T}"/eclipse{,rc}-bin-${SLOT} || die
 
 	insinto /etc
-	newins "${T}"/eclipserc-bin eclipserc-bin-${SLOT}
+	newins "${T}"/eclipserc-bin-${SLOT} eclipserc-bin-${SLOT}
 
-	newbin "${T}"/eclipse-bin eclipse-cdt-bin-${SLOT}
-	make_desktop_entry "eclipse-cdt-bin-${SLOT}" "Eclipse ${RNAME}" "${dest}/icon.xpm"
+	newbin "${T}"/eclipse-bin-${SLOT} eclipse-bin-${SLOT}
+	make_desktop_entry "eclipse-bin-${SLOT}" "Eclipse ${PV} (bin)" "${dest}/icon.xpm"
 }
