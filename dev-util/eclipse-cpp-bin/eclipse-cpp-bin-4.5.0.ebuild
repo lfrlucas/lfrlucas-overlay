@@ -9,7 +9,7 @@ inherit eutils versionator
 SR=R
 RNAME="mars"
 
-SRC_BASE="http://www.eclipse.org/downloads/download.php?file=/technologycpp/downloads/release/${RNAME}/${SR}/eclipse-cpp-${RNAME}-${SR}-linux-gtk"
+SRC_BASE="http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/${RNAME}/${SR}/eclipse-cpp-${RNAME}-${SR}-linux-gtk"
 
 DESCRIPTION="Eclipse SDK"
 HOMEPAGE="http://www.eclipse.org"
