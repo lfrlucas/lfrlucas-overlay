@@ -2,10 +2,10 @@ DEFINED_PHASES=install
 DESCRIPTION=Eclipse SDK
 EAPI=5
 HOMEPAGE=http://www.eclipse.org
-KEYWORDS=~amd64
+KEYWORDS=x86 amd64
 LICENSE=EPL-1.0
 RDEPEND=>=virtual/jdk-1.6 x11-libs/gtk+:2
 SLOT=4.5
 SRC_URI=amd64? ( http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/mars/R/eclipse-cpp-mars-R-linux-gtk-x86_64.tar.gz&r=1 -> eclipse-cpp-mars-R-linux-gtk-x86_64-4.5.0.tar.gz ) x86? ( http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/mars/R/eclipse-cpp-mars-R-linux-gtk.tar.gz&r=1 -> eclipse-cpp-mars-R-linux-gtk-4.5.0.tar.gz )
-_eclasses_=eutils	9fb270e417e0e83d64ca52586c4a79de	multilib	62927b3db3a589b0806255f3a002d5d3	toolchain-funcs	42408102d713fbad60ca21349865edb4	versionator	cd0bcdb170807e4a1984115e9d53a26f
-_md5_=34c84441d97b4125259049d56330f2b1
+_eclasses_=eutils	ea170b525f6a38a006be05c9d9429f13	multilib	165fc17c38d1b11dac2008280dab6e80	toolchain-funcs	1b1da0c45c555989dc5d832b54880783	versionator	99ae9d758cbe7cfed19170e7d48f5a9c
+_md5_=24951093b6190f957758f25dc63a8163
